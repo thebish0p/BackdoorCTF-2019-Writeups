@@ -50,6 +50,8 @@ def report(request):
 
     return redirect('/')
 ```
+# Looking at the hidden content posts
+
 I continued by checking the GET request URL sent while reporting a post and got this:
  
 `http://51.158.118.84:16001/report?id=3212&instance=ffe6fb23-9c99-442b-bbeb-3a2479b94d21&csrf=6174ccc91211e3c6`
