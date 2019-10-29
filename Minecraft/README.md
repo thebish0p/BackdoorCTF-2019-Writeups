@@ -23,7 +23,7 @@ def revmine(block):
             return bl
 ```
 
-After checking the `flag.enc` file, you can notice that it's a list with JSON arrays as elements all having the same format, for example:
+After checking the `flag.enc` file, you can notice that it's a list with JSON array elements all having the same format:
 
 `{"self": "0006360358c874c74db5405a05f6a1f2292ef51a4259d680904fb9dff1c6065f", "hashalg": "sha256", "prev": "00059001dc03d12843d751d77380193db2744b20688709e4aa0b66aec25b663a", "data": 3266, "nonce": 9612}`
 
