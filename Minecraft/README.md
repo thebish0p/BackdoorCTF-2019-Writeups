@@ -74,7 +74,7 @@ for j in range(len(sortedlist)):
             break
 ```
 
-The output contained the flag as shown below:
+The output revealed the flag as shown below:
 ```
 f
 fl
