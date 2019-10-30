@@ -27,6 +27,8 @@ After checking the `flag.enc` file, you can notice that it's a list with JSON ar
 
 `{"self": "0006360358c874c74db5405a05f6a1f2292ef51a4259d680904fb9dff1c6065f", "hashalg": "sha256", "prev": "00059001dc03d12843d751d77380193db2744b20688709e4aa0b66aec25b663a", "data": 3266, "nonce": 9612}`
 
+So that for each element in our JSON array, we know which element is previous to it in the order they impose upon us.
+
 # Sorting `flag.enc`
 
 So first of all I had to sort the list by using the fact the we had a `prev` parameter. 
@@ -51,7 +53,7 @@ print(sortedlist)
 ```
 # Getting the FLAG
 
-Wrote a script to bruteforce through the ASCII table in order to get the same sha256 hashed `self` parameter as shown below :
+Wrote a script to bruteforce through the ASCII table in order to decrypt each sha256 hashed character and form the flag as shown below :
 
 ```python
 import hashlib
